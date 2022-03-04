@@ -5,6 +5,7 @@ from flask import Flask, flash, request, redirect, url_for, render_template
 from werkzeug.utils import secure_filename
 from api_call import correct_sent_tc_api
 from sign_language_crework import get_word,get_sent,save_uploadedfile
+from flask_ngrok import run_with_ngrok
 
 app=Flask(__name__)
 run_with_ngrok(app)
