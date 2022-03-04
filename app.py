@@ -7,6 +7,7 @@ from api_call import correct_sent_tc_api
 from sign_language_crework import get_word,get_sent,save_uploadedfile
 
 app=Flask(__name__)
+run_with_ngrok(app)
 
 UPLOAD_FOLDER = 'static/uploads/'
 app.secret_key = "secret key"
@@ -53,4 +54,4 @@ def predict(filename):
 
 
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)

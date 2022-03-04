@@ -101,8 +101,8 @@ def split_video(full_video):
 
 def get_word(video_name):
         ## Change to where the videos are located
-    root = {'word':'videos'}
-    videos_path="videos"
+    root = {'word':'static/uploads'}
+    videos_path="uploads"
     dict_1=read_and_write(videos_path,video_name)
     write_json(dict_1)
     read_and_run(root)
